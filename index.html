@@ -105,6 +105,16 @@
   .pub:hover{box-shadow:0 8px 24px rgba(15,42,74,.08)}
   .pub .title{font-weight:600;color:var(--navy);font-size:.98rem}
   .pub .meta{color:var(--muted);font-size:.86rem;margin-top:5px;font-style:italic}
+  .pub .auth{color:#4a5a6a;font-size:.82rem;margin-top:4px}
+  .pubcat{background:#fff;border:1px solid var(--line);border-radius:var(--radius);margin-bottom:14px;overflow:hidden}
+  .pubcat summary{cursor:pointer;padding:16px 22px;font-weight:700;color:var(--navy);font-size:1rem;background:var(--bg-soft);list-style:none;display:flex;align-items:center;justify-content:space-between;gap:12px}
+  .pubcat summary::-webkit-details-marker{display:none}
+  .pubcat summary::after{content:"+";font-size:1.3rem;color:var(--blue);font-weight:600}
+  .pubcat[open] summary::after{content:"–"}
+  .pubcat summary:hover{background:var(--blue-light)}
+  .pcount{background:var(--blue);color:#fff;border-radius:999px;padding:2px 11px;font-size:.78rem;font-weight:700;margin-left:auto}
+  .pubcat .pub{border-left:none;border:none;border-top:1px solid var(--line);border-radius:0;margin-bottom:0;padding:16px 22px}
+  .pubcat .pub:hover{box-shadow:none;background:var(--bg-soft)}
   .pub-links{margin-top:24px;display:flex;gap:12px;flex-wrap:wrap}
   .pub-links .btn{padding:11px 20px;font-size:.9rem}
   .pub-links .btn-ghost{margin-left:0}
@@ -356,39 +366,471 @@
       <span class="chip">Molecular Biomarkers</span>
     </div>
 
-    <h3 style="color:var(--navy);margin-bottom:16px">Selected Publications</h3>
-    <div class="pub">
-      <div class="title">Artificial Intelligence-Assisted Endoscopic Ultrasound-Guided Ablation of Pancreatic Neuroendocrine Tumors: Toward Precision Diagnosis, Risk Stratification, and Personalized Therapy</div>
-      <div class="meta">Cureus · 2026</div>
-    </div>
-    <div class="pub">
-      <div class="title">Clinical Significance and Long-Term Prognosis of Appendiceal Orifice Inflammation in Ulcerative Colitis: A Systematic Review</div>
-      <div class="meta">Cureus · 2026</div>
-    </div>
-    <div class="pub">
-      <div class="title">Platelet Antigen Polymorphisms in Cirrhosis: Association with Esophageal Varices Development</div>
-      <div class="meta">International Journal of General Medicine · 2026</div>
-    </div>
-    <div class="pub">
-      <div class="title">Efficacy and Safety of Infliximab versus Adalimumab in Adult Subjects with Moderate to Severe Ulcerative Colitis: A Systematic Review and Meta-analysis</div>
-      <div class="meta">Cureus · 2024</div>
-    </div>
-    <div class="pub">
-      <div class="title">Outcomes of Revisional Surgery Options after Inadequate Sleeve Gastrectomy: A Comprehensive Network Meta-analysis</div>
-      <div class="meta">World Journal of Surgery · 2024</div>
-    </div>
-    <div class="pub">
-      <div class="title">Impact of Laparoscopic Sleeve Gastrectomy on Fibrosis Stage in Patients with Child-A NASH-related Cirrhosis</div>
-      <div class="meta">Surgical Endoscopy · 2021</div>
-    </div>
-    <div class="pub">
-      <div class="title">Impact of Sarcopenia on Two-Year Mortality in Patients with HCV-associated Hepatocellular Carcinoma after Radiofrequency Ablation</div>
-      <div class="meta">Journal of Hepatocellular Carcinoma · 2021</div>
-    </div>
-    <div class="pub">
-      <div class="title">Effect of Weight Loss Induced by Laparoscopic Sleeve Gastrectomy on Liver Histology and Serum Adipokine Levels</div>
-      <div class="meta">Journal of Gastroenterology and Hepatology · 2020</div>
-    </div>
+    <h3 style="color:var(--navy);margin-bottom:16px">Complete List of Publications (88)</h3>
+    <details class="pubcat" open>
+      <summary>Metabolic Gastroenterology, MASLD, and Bariatric Interventions <span class="pcount">32</span></summary>
+      <div class="pub">
+        <div class="title">1. Laparoscopic sleeve gastrectomy on the horizon as a promising treatment modality for NAFLD.</div>
+        <div class="auth">Salman MA, Salman A, Abdelsalam A, Atallah M, Shaaban HED, El-Mikkawy A, Omar MG, Elshenoufy M</div>
+        <div class="meta">Obesity Surgery. 2020.</div>
+      </div>
+      <div class="pub">
+        <div class="title">2. Effect of weight loss induced by laparoscopic sleeve gastrectomy on liver histology and serum adipokine levels.</div>
+        <div class="auth">Salman A, Sultan AEA, Abdallah A, Abdelsalam A, Mikhail HMS, Tourky M, Omar MG, Youssef A, Ahmed RA, Elkassar H, Seif El Nasr SM, Shaaban HED, Atallah M, GabAllah GMK, Salman MA</div>
+        <div class="meta">Journal of Gastroenterology and Hepatology. 2020.</div>
+      </div>
+      <div class="pub">
+        <div class="title">3. Long-term impact of mini-gastric bypass on inflammatory cytokines in cohort of morbidly obese patients: a prospective study.</div>
+        <div class="auth">Salman MA, Abdallah A, Mikhail HMS, Abdelsalam A, Ibrahim AH, Sultan AEA, El-Ghobary M, Ismail AAM, Abouelregal TE, Omar MG, AbdelAal AA, Shaaban HED, GabAllah GMK, Tourky M, Salman A</div>
+        <div class="meta">Obesity Surgery. 2020.</div>
+      </div>
+      <div class="pub">
+        <div class="title">4. Long-term changes in leptin, chemerin, and ghrelin levels following Roux-en-Y gastric bypass and laparoscopic sleeve gastrectomy.</div>
+        <div class="auth">Salman MA, El-Ghobary M, Soliman A, El Sherbiny M, Abouelregal TE, Albitar A, Abdallah A, Mikhail HMS, Nafea MA, Sultan AEA, Elshafey HE, Shaaban HED, Azzam A, GabAllah GMK, Salman A</div>
+        <div class="meta">Obesity Surgery. 2020.</div>
+      </div>
+      <div class="pub">
+        <div class="title">5. Study of changes of obesity-related inflammatory cytokines after laparoscopic sleeve gastrectomy.</div>
+        <div class="auth">Salman MA, Salman A, Nafea MA, Sultan AEA, Anwar HW, Ibrahim AH, Awad A, Ahmed RA, Seif El Nasr SM, Abouelregal TE, Shaaban HED, Mohamed FAH</div>
+        <div class="meta">ANZ Journal of Surgery. 2019.</div>
+      </div>
+      <div class="pub">
+        <div class="title">6. Improvement of obstructive sleep apnea-hypopnea syndrome in morbidly obese patients undergoing laparoscopic sleeve gastrectomy: prospective study.</div>
+        <div class="auth">Salman MA, Othman B, Salman A, Abdallah A, Elkassar H, Omar MG, Ghobashy A, Nafea MA, Sultan AEA, Abdulsamad AS, Lotfy SM</div>
+        <div class="meta">Bariatric Surgical Practice and Patient Care. 2020.</div>
+      </div>
+      <div class="pub">
+        <div class="title">7. Impact of laparoscopic sleeve gastrectomy on fibrosis stage in patients with Child-A NASH-related cirrhosis.</div>
+        <div class="auth">Salman MA, Mikhail HMS, Nafea MA, Sultan AEA, Elshafey HE, Tourky M, Awad A, Abouelregal TE, Ahmed RA, Ashoush O, AbdelAal AA, Shaaban HED, Atallah M, Yousef M, Salman A</div>
+        <div class="meta">Surgical Endoscopy. 2021.</div>
+      </div>
+      <div class="pub">
+        <div class="title">8. Acceleration of gastric emptying and improvement of GERD outcome after laparoscopic sleeve gastrectomy in non-diabetic obese patients.</div>
+        <div class="auth">Salman MA, Mikhail HMS, Abdelsalam A, Abdallah A, Elshafey HE, Abouelregal TE, Omar MG, Elkassar H, Ahmed RA, Atallah M, Shaaban HED, Abdellatif Z, Elkholy S, Salman A</div>
+        <div class="meta">Obesity Surgery. 2020.</div>
+      </div>
+      <div class="pub">
+        <div class="title">9. Improvement of systemic adipokines and adipokine hepatic gene expression after laparoscopic sleeve gastrectomy.</div>
+        <div class="auth">Salman MA, Mikhail HMS, Abdelsalam A, Sultan AEA, El-Ghobary M, Ismail AAM, Abouelregal TE, AbdelAal AA, Shaaban HED, GabAllah GMK, Tourky M, Salman A</div>
+        <div class="meta">Bariatric Surgical Practice and Patient Care. 2020.</div>
+      </div>
+      <div class="pub">
+        <div class="title">10. Long-term effects of one-anastomosis gastric bypass on liver histopathology in NAFLD cases: a prospective study.</div>
+        <div class="auth">Salman MA, Salman A, Omar HSE, Abdelsalam A, Mostafa MS, Tourky M, Sultan AEA, Elshafey MH, Abdelaty WR, Salem A, Khaliel OO, Elshafey HE, Atallah M, Shaaban HED, Yousef M, Nafea MA</div>
+        <div class="meta">Surgical Endoscopy. 2021.</div>
+      </div>
+      <div class="pub">
+        <div class="title">11. Effect of bariatric surgery on the cardiovascular system in obese cases with pulmonary hypertension.</div>
+        <div class="auth">Salman A, Salman MA, Shaaban HED, Abdelsalam A, Tourky M, Lotfy SM, Omar HSE, Mostafa MS, Nafea MA, Sultan AEA, Elshafey MH, Salem A, Abdelaty WR, Khaliel OO, Mikhail HMS</div>
+        <div class="meta">Obesity Surgery. 2021.</div>
+      </div>
+      <div class="pub">
+        <div class="title">12. Effect of laparoscopic sleeve gastrectomy on vasoactive mediators in obese hypertensive patients: a prospective study.</div>
+        <div class="auth">Salman A, Salman MA, Shawkat M, Hassan SA, Saad EH, Hussein AM, Refaie ORM, Tourky MS, Shaaban HED, Abd Allah N, El Domiaty HF, Elkassar H</div>
+        <div class="meta">Clinical Endocrinology. 2021.</div>
+      </div>
+      <div class="pub">
+        <div class="title">13. Factors associated with resolution of type-2 diabetes mellitus after sleeve gastrectomy in obese adults.</div>
+        <div class="auth">Salman A, Salman MA, Marie MA, Rabiee A, Helmy MY, Tourky MS, Qassem MG, Shaaban HED, Sarhan MD</div>
+        <div class="meta">Scientific Reports. 2021.</div>
+      </div>
+      <div class="pub">
+        <div class="title">14. Changes of epicardial fat thickness after laparoscopic sleeve gastrectomy: a prospective study.</div>
+        <div class="auth">Salman A, Salman MA, Soliman A, Youssef A, Labib S, Helmy MY, Marie MA, Shawkat M, Mostafa A, Tourky MS, Sarhan MD, Qassem MG, Shaaban HED, Omar MG, Abouelrega TE</div>
+        <div class="meta">Annals of Medicine. 2021.</div>
+      </div>
+      <div class="pub">
+        <div class="title">15. Changes in plasma growth differentiation factor-15 after laparoscopic sleeve gastrectomy in morbidly obese patients: a prospective study.</div>
+        <div class="auth">Salman A, Shaaban HED, Salman M, Seif El Nasr SM, Soliman A, Salem A, Tag El-Din M, Mikhail HMS, El Domiaty H, Abd Allah N, GabAllah GMK, Youssef A</div>
+        <div class="meta">Journal of Inflammation Research. 2021.</div>
+      </div>
+      <div class="pub">
+        <div class="title">16. Effect of preoperative diet regimen on liver size before laparoscopic sleeve gastrectomy in morbidly obese patients.</div>
+        <div class="auth">Salman MA, Qassem MG, Aboul-Enein MS, Ameen MAA, Abdallah A, Omar H, Hussein AM, Tourky MS, Monazea K, Hassan AM, Salman A, Moustafa A, Shaaban HED, Soliman A, Sarhan MD</div>
+        <div class="meta">Surgical Endoscopy. 2021.</div>
+      </div>
+      <div class="pub">
+        <div class="title">17. Laparoscopic sleeve gastrectomy has a positive impact on subclinical hypothyroidism among obese patients: a prospective study.</div>
+        <div class="auth">Salman MA, Rabiee A, Salman A, Qassem MG, Ameen MA, Hassan AM, Soliman A, Shaaban H, GabAllah GMK, Ismail AA, Omar HSE</div>
+        <div class="meta">World Journal of Surgery. 2021.</div>
+      </div>
+      <div class="pub">
+        <div class="title">18. Improvement of coronary calcium scores after bariatric surgery in people with severe obesity.</div>
+        <div class="auth">Salman A, Matter M, Fayad NI, Shehata MSA, Abd Al-Fattah M, Elkaseer MH, Borham MM, Balamoun HA, Sultan AEA, Mikhail HMS, Omar HSE, Milad N, Tourky MS, Elias AAK, Mostafa A, Samir A, Hussein AM, Shaaban HED, Ali HAA, Salman MA</div>
+        <div class="meta">Obesity Surgery. 2022.</div>
+      </div>
+      <div class="pub">
+        <div class="title">19. Ursodeoxycholic acid for the prevention of gall stones after laparoscopic sleeve gastrectomy: a prospective controlled study.</div>
+        <div class="auth">Salman MA, Salman A, Mohamed US, Hussein AM, Ameen MA, Omar HSE, Elewa A, Hamdy A, Elias AAK, Tourky M, Helal A, Mahmoud AA, Aljarad F, Moustafa A, Shaaban HED, Nashaat A, Hussein AM, Omar T, Balamoun H</div>
+        <div class="meta">Surgical Endoscopy. 2022.</div>
+      </div>
+      <div class="pub">
+        <div class="title">20. Effects of gastric bypass and sleeve gastrectomy on bone mineral density and bone turnover markers: a systematic review and meta-analysis.</div>
+        <div class="auth">Salman MA, Aradaib M, Salman A, Elewa A, Tourky M, Shaaban HED</div>
+        <div class="meta">World Journal of Surgery. 2022.</div>
+      </div>
+      <div class="pub">
+        <div class="title">21. The impact of drain and reinforcement on the outcomes of bariatric surgery.</div>
+        <div class="auth">Salman MA, Safina A, Salman A, Farah M, Noureldin K, Issa M, Dorra A, Tourky M, Shaaban HED, Aradaib M</div>
+        <div class="meta">Cureus. 2021.</div>
+      </div>
+      <div class="pub">
+        <div class="title">22. Secondary hyperparathyroidism before and after bariatric surgery: a prospective study with 2-year follow-up.</div>
+        <div class="auth">Salman MA, Salman A, Elewa A, Rabiee A, Tourky M, Shaaban HED, Issa M, AbdAlla A, Khattab M, Refaat A, Fathy E, Mohamed US, Noureldin K, Moustafa A, Elias AAK, Elmarzouky MS, Shazly MN, Omar HSE</div>
+        <div class="meta">Obesity Surgery. 2022.</div>
+      </div>
+      <div class="pub">
+        <div class="title">23. Nutritional complications after laparoscopic Roux-en-Y gastric bypass and one-anastomosis gastric bypass: a comparative systematic review and meta-analysis.</div>
+        <div class="auth">Tourky M, Issa M, Salman MA, Salman A, Shaaban HED, Safina A, Elias AAK, Elewa A, Noureldin K, Mahmoud AA, Dorra A, Farah M, Gebril M, Elhaj MGF, Barbary H</div>
+        <div class="meta">Cureus. 2022.</div>
+      </div>
+      <div class="pub">
+        <div class="title">24. Predictors of type-2 diabetes remission following bariatric surgery after a two-year follow up.</div>
+        <div class="auth">Salman MA, Rabiee A, Salman A, Elewa A, Tourky M, Mahmoud AA, Moustafa A, Shaaban HED, Ismail AA, Noureldin K, Issa M, Farah M, Barbary H, Elhaj MGF, Omar HSE</div>
+        <div class="meta">Asian Journal of Surgery. 2022.</div>
+      </div>
+      <div class="pub">
+        <div class="title">25. Improvement of pancreatic steatosis and indices of insulin resistance after metabolic surgery.</div>
+        <div class="auth">Salman A, Salman MA, Said M, El Sherbiny M, Elkassar H, Hassan MB, Marwan A, Morad MA, Ashoush O, Labib S, Aon MH, Awad A, Sayed M, Taha AE, Moustafa A, Shaaban HED, Khater A, Elewa A, Khalaf AM, Mostafa AA, Matter M, Youssef A</div>
+        <div class="meta">Frontiers in Medicine. 2022.</div>
+      </div>
+      <div class="pub">
+        <div class="title">26. Impact of weight loss on the severity of albuminuria in obese diabetic patients undergoing laparoscopic sleeve gastrectomy and one-anastomosis gastric bypass.</div>
+        <div class="auth">Salman A, Salman MA, Aon MH, Mahdy RE, Abdallah A, Shemy GG, Hassan AM, Amin FAS, Labib S</div>
+        <div class="meta">International Journal of General Medicine. 2022.</div>
+      </div>
+      <div class="pub">
+        <div class="title">27. Cost-effectiveness of totally robotic and conventional laparoscopic Roux-en-Y gastric bypass: a systematic review and meta-analysis.</div>
+        <div class="auth">Salman MA, Salman A, Elewa A, Tourky M, Shaaban HED, Elshaer AM, Elhaj MGF, Gebril M, Elsherbiney M, Khalid S, Assal MM, Alasmar M</div>
+        <div class="meta">Bariatric Surgical Practice and Patient Care. 2023.</div>
+      </div>
+      <div class="pub">
+        <div class="title">28. Three-dimensional multi-detector computed tomography gastric volumetry in obese and normal-weight individuals.</div>
+        <div class="auth">Salman MA, Othman B, Elshehry A, Abbas M, Fouad M, Saadawy A, Elewa A, Tourky M, Shaaban H, Salman A, Elshahed S, Gebril M, Khalid S, Elsherbiney M, Assal MM, Osman MHA, Mohammed AA, Mohamed US</div>
+        <div class="meta">Obesity Surgery. 2023.</div>
+      </div>
+      <div class="pub">
+        <div class="title">29. One anastomosis gastric bypass with a 150-cm biliopancreatic limb versus a 200-cm biliopancreatic limb: a systematic review and meta-analysis.</div>
+        <div class="auth">Salman MA, Salman A, Assal MM, Elsherbiney M, Tourky M, Elewa A, Khalaf AM, Gadallah MA, Gebril M, Khalid S, Shaaban H, Mohammed AA, Osman MHA, Hassan H</div>
+        <div class="meta">Obesity Surgery. 2023.</div>
+      </div>
+      <div class="pub">
+        <div class="title">30. Reply to letter to the editor in regard to the article: “One anastomosis gastric bypass (OAGB) with a 150-cm biliopancreatic limb (BPL) versus a 200-cm BPL, a systematic review and meta-analysis.”</div>
+        <div class="auth">Salman MA, Salman A, Elewa A</div>
+        <div class="meta">Obesity Surgery. 2023.</div>
+      </div>
+      <div class="pub">
+        <div class="title">31. Examining the beneficial effect of micronutrient monitoring for bariatric surgical patients: a retrospective observational study.</div>
+        <div class="auth">Salman MA, Conway N, Bateman L, Albon L, Mabrook M, Khalid A, Salman A</div>
+        <div class="meta">Bariatric Surgical Practice and Patient Care. 2024.</div>
+      </div>
+      <div class="pub">
+        <div class="title">32. Outcomes of revisional surgery options after inadequate sleeve gastrectomy: a comprehensive network meta-analysis.</div>
+        <div class="auth">Salman M, Salman A, Elewa A, Elsherbiney M, Tourky M, Chikukuza S, Gadallah M, Ismail A, Hussein A</div>
+        <div class="meta">World Journal of Surgery. 2024.</div>
+      </div>
+    </details>
+    <details class="pubcat">
+      <summary>Liver Transplantation, Portal Hemodynamics, and Advanced Hepatology <span class="pcount">14</span></summary>
+      <div class="pub">
+        <div class="title">33. Exploring portal vein hemodynamic velocities as a promising, attractive horizon for small-for-size syndrome prediction after living-donor liver transplantation: an Egyptian center study.</div>
+        <div class="auth">Salman A, El-Garem N, Sholkamy A, Hosny K, Abdelaziz O</div>
+        <div class="meta">Transplantation Proceedings. 2016.</div>
+      </div>
+      <div class="pub">
+        <div class="title">34. Portal venous pressure and proper graft function in living donor liver transplants in 69 patients from an Egyptian center.</div>
+        <div class="auth">Sholkamy A, Salman A, El-Garem N, Hosny K, Abdelaziz O</div>
+        <div class="meta">Annals of Saudi Medicine. 2018.</div>
+      </div>
+      <div class="pub">
+        <div class="title">35. Portal venous pressure as a predictor of mortality in cirrhotic patients undergoing emergency surgery.</div>
+        <div class="auth">Salman MA, Mansour DA, Balamoun HA, Elbarmelgi MY, Hadad KEE, Abo Taleb MES, Salman A</div>
+        <div class="meta">Asian Journal of Surgery. 2019.</div>
+      </div>
+      <div class="pub">
+        <div class="title">36. Predictors of early recipient mortality after living donor liver transplantation in a tertiary care center in Egypt.</div>
+        <div class="auth">Nafea MA, Alsebaey A, Sultan AEA, Goda MH, Salman A, Rashed HS, Soliman A, Elshenoufy M, Abdelrahman M</div>
+        <div class="meta">Annals of Saudi Medicine. 2019.</div>
+      </div>
+      <div class="pub">
+        <div class="title">37. Portal venous hemodynamics as predictors for the development and grades of esophageal varices in post-HCV cirrhotic patients: an Egyptian centre study.</div>
+        <div class="auth">Salman A, Salman MA, Tourky M, Shawkat M</div>
+        <div class="meta">Advances in Digestive Medicine. 2021.</div>
+      </div>
+      <div class="pub">
+        <div class="title">38. Long-term outcome after endoscopic ligation of acute esophageal variceal bleeding in patients with liver cirrhosis.</div>
+        <div class="auth">Salman A, Shaaban HED, Atallah M, Yousef M, Ahmed RA, Ashoush O, Tourky M, Nafea MA, Elshafey MH, El-Ghobary M</div>
+        <div class="meta">Acta Gastroenterologica Belgica. 2020.</div>
+      </div>
+      <div class="pub">
+        <div class="title">39. Portal venous pressure as a predictor of mortality in Child’s A cirrhotic patients undergoing elective surgery: a prospective study.</div>
+        <div class="auth">El-Ghobary M, Salman A, Shaaban HED, Mostafa MS, Tourky MS, Youssef OR, Omar MG</div>
+        <div class="meta">Open Access Macedonian Journal of Medical Sciences. 2020.</div>
+      </div>
+      <div class="pub">
+        <div class="title">40. Study of factors affecting small for size syndrome post-adult living donor liver transplantation.</div>
+        <div class="auth">Abdallah A, Salman A, Sholkamy AA, Salman MA, Omar MG, Youssef A, Ameen MA, Abdel Dayem AY, Shaaban HED, Youssef OR, Abd Allah N, Abdelaty WR</div>
+        <div class="meta">Asian Journal of Surgery. 2021.</div>
+      </div>
+      <div class="pub">
+        <div class="title">41. Study of early postoperative Doppler changes post living donor liver transplantation and their impact on early mortality and small-for-size syndrome: a retrospective study.</div>
+        <div class="auth">Salman A, Sholkamy A, Salman M, Omar M, Saadawy A, Abdulsamad A, Tourky M, Sarhan MD, Shaaban HED, Abd Allah N, Shawkat M</div>
+        <div class="meta">International Journal of General Medicine. 2021.</div>
+      </div>
+      <div class="pub">
+        <div class="title">42. Portal venous pressure in non-cirrhotic bilharzial patients undergoing elective splenectomy: can it affect mortality? A prospective study.</div>
+        <div class="auth">Tourky M, Youssef A, Salman M, Abouelregal T, Tag El-Din M, Moustafa A, Taha A, El-Mikkawy A, Saadawy A, Salman A</div>
+        <div class="meta">Acta Gastro-Enterologica Belgica. 2021.</div>
+      </div>
+      <div class="pub">
+        <div class="title">43. Intra-operative factors affecting early recipient death post adult-to-adult living donor liver transplantation.</div>
+        <div class="auth">Tourky MS, Salman A, Salman MA, Abdelfatah MM, Taha AE, Hagag H, Youssef MYS, Arafa MS, Khattab SA, Borham MM, Moustafa A</div>
+        <div class="meta">Experimental and Clinical Transplantation. 2021.</div>
+      </div>
+      <div class="pub">
+        <div class="title">44. Impact of hypothyroidism on patients with hepatocellular carcinoma undergoing liver transplantation.</div>
+        <div class="auth">Salman A, Aon M, Hussein A, Salman M, Tourky M, Mahmoud A, Aljarad F, Elkaseer M, Shaaban HED, Moustafa A, El-Mikkawy A, Gaballa N, Abdallah H, Rashed ZFZ, Elkassar H</div>
+        <div class="meta">International Journal of General Medicine. 2021.</div>
+      </div>
+      <div class="pub">
+        <div class="title">45. Albuminuria as a predictor of mortality in type II diabetic patients after living-donor liver transplantation.</div>
+        <div class="auth">Salman A, Salman MA, Said M, Elkassar H, El Sherbiny M, Youssef A, Elbaz M, Elmeligui AM, Hassan MB, Omar MG, Samir H, Morad MA, Shaaban HED, Youssef M, Moustafa A, Tourky MS, Elewa A, Khalid S, Monazea K, Shawkat M</div>
+        <div class="meta">Annals of Medicine. 2022.</div>
+      </div>
+      <div class="pub">
+        <div class="title">46. Intraoperative portal vein pressure and post-transplant graft outcomes in adult liver transplantation: a systematic review and meta-analysis</div>
+        <div class="auth">Salman A, Marwan A, Elewa A, Abdallah A, Taha A</div>
+        <div class="meta">Surgery, Gastroenterology, and Oncology Journal. Accepted. 2026</div>
+      </div>
+    </details>
+    <details class="pubcat">
+      <summary>Advanced Endoscopy (ERCP/EUS), General Endoscopy, and Imaging <span class="pcount">7</span></summary>
+      <div class="pub">
+        <div class="title">47. Real-time endoscopic ultrasound elastography and strain ratio in the diagnosis of solid pancreatic lesions.</div>
+        <div class="auth">Okasha H, Elkholy S, El-Sayed R, Wifi MN, El-Nady M, El-Nabawi W, El-Dayem WA, Radwan MI, Farag A, El-Sherif Y, Al-Gemeie E, Salman A, El-Sherbiny M, El-Mazny A, Mahdy RE</div>
+        <div class="meta">World Journal of Gastroenterology. 2017.</div>
+      </div>
+      <div class="pub">
+        <div class="title">48. Endoscopic ultrasound-guided fine-needle aspiration and cytology for differentiating benign from malignant lymph nodes.</div>
+        <div class="auth">Okasha H, Elkholy S, Sayed M, Salman A, Elsherif Y, El-Gemeie E</div>
+        <div class="meta">Arab Journal of Gastroenterology. 2017.</div>
+      </div>
+      <div class="pub">
+        <div class="title">49. Elastography and strain ratio in diagnosing different body masses: could they solve the puzzle?</div>
+        <div class="auth">Okasha H, Elkholy S, Aref W, Abdel-Moaty A, Mostafa A, Ashraf A, El-Husseiny R, Elsherif Y, Abo El-Magd A, Saeed M, Salman A, Mahdy RE</div>
+        <div class="meta">Internal Medicine. 2018.</div>
+      </div>
+      <div class="pub">
+        <div class="title">50. Negative ERCP: Incidence Predictors and Clinical Consequences — A Systematic Review and Meta-analysis</div>
+        <div class="auth">Salman A</div>
+        <div class="meta">Euroasian Journal of Hepato-Gastroenterology. Accepted. 2026.</div>
+      </div>
+      <div class="pub">
+        <div class="title">51. Endoscopic Ultrasound-First Versus ERCP-First Strategies for the Primary Diagnosis of Common Bile Duct Stones: Systematic Review and Meta-analysis.</div>
+        <div class="auth">Salman A, Ahmed Elewa, Abdallah A, Marawan A</div>
+        <div class="meta">Surgery, Gastroenterology, and Oncology Journal. Accepted. 2026.</div>
+      </div>
+      <div class="pub">
+        <div class="title">52. Diagnostic and therapeutic values of pelvi-abdominal ultrasound in cases presenting with acute abdomen.</div>
+        <div class="auth">Salman MA, Salman A, Nafea MA, Sultan AEA, Abouelregal TE, Elkassar H, Omar MG, Ismail AAM, Ghobashy A, Ibrahim A, Essam M, El-Mikkawy A, Farag AM</div>
+        <div class="meta">Biocell. 2019.</div>
+      </div>
+      <div class="pub">
+        <div class="title">53. Artificial Intelligence in Cholangioscopy: A New Frontier for Indeterminate Biliary Strictures</div>
+        <div class="auth">Salman A, Ahmed Marwan A</div>
+        <div class="meta">Euroasian Journal of Hepatogastroenterology. 2026</div>
+      </div>
+    </details>
+    <details class="pubcat">
+      <summary>Molecular Biomarkers, Metabolic Mechanisms, and MASLD-Focused Research <span class="pcount">4</span></summary>
+      <div class="pub">
+        <div class="title">54. Serum resistin level and its receptor gene expression in liver biopsy as predictors for the severity of non-alcoholic fatty liver disease.</div>
+        <div class="auth">Hegazy M, Abo-Elfadl S, Mostafa A, Ibrahim M, Rashed L, Salman A</div>
+        <div class="meta">Euroasian Journal of Hepatogastroenterology. 2014.</div>
+      </div>
+      <div class="pub">
+        <div class="title">55. Combined adiponectin deficiency and resistance in obese patients: can it solve part of the puzzle in non-alcoholic steatohepatitis?</div>
+        <div class="auth">Salman A, Hegazy M, AbdElfadl S</div>
+        <div class="meta">Open Access Macedonian Journal of Medical Sciences. 2015.</div>
+      </div>
+      <div class="pub">
+        <div class="title">56. New era for usage of serum liver enzymes as a promising horizon for the prediction of non-alcoholic fatty liver disease.</div>
+        <div class="auth">Salman A, Aboelfadl SAE, Hegazy MAE</div>
+        <div class="meta">Open Access Macedonian Journal of Medical Sciences. 2016.</div>
+      </div>
+      <div class="pub">
+        <div class="title">57. Role of vitamin D supplements in prevention of hungry bone syndrome after successful parathyroidectomy for primary hyperparathyroidism: a prospective study.</div>
+        <div class="auth">Salman MA, Rabiee A, Salman A, Youssef A, Shaaban HED, Ftohy T, Maurice KK, Balamoun H</div>
+        <div class="meta">Scandinavian Journal of Surgery. 2021.</div>
+      </div>
+    </details>
+    <details class="pubcat">
+      <summary>Hepatology, Gastroenterology, Oncology, and General Clinical Medicine <span class="pcount">7</span></summary>
+      <div class="pub">
+        <div class="title">58. Outcomes of pregnancy in Child A liver cirrhotic patients: a retrospective multicenter study.</div>
+        <div class="auth">Salman A, Kasem MF, Kholaif KM, Ramadan M, Yousef M, Shaaban HED, Atallah M, El Sherbiny M, Ashoush O, Seif El Nasr SM</div>
+        <div class="meta">Advances in Digestive Medicine. 2021.</div>
+      </div>
+      <div class="pub">
+        <div class="title">59. High- versus low-dose proton pump inhibitors post endoscopic hemostasis in hemodialysis cases with peptic ulcer bleeding.</div>
+        <div class="auth">Salman A, Salman MA, Sarhan MD, Shaaban HED, Yousef M, Ibrahim A, Tourky M, Youssef A, El Sherbiny M</div>
+        <div class="meta">Acta Gastro-Enterologica Belgica. 2021.</div>
+      </div>
+      <div class="pub">
+        <div class="title">60. Impact of sarcopenia on two-year mortality in patients with HCV-associated hepatocellular carcinoma after radiofrequency ablation.</div>
+        <div class="auth">Salman A, Salman M, Moustafa A, Shaaban HED, El-Mikkawy A, Labib S, Youssef A, Omar MG, Matter M, Elkassar H</div>
+        <div class="meta">Journal of Hepatocellular Carcinoma. 2021.</div>
+      </div>
+      <div class="pub">
+        <div class="title">61. Antithyroid peroxidase antibodies and histopathological outcomes in Egyptian patients subjected to total thyroidectomy for non-malignant nodular goiter.</div>
+        <div class="auth">Rabiee A, Salman M, Tourky M, Ameen M, Hussein A, Salman A, Labib S, Soliman AAZA, Shaaban HED, GabAllah G, Abouelregal T</div>
+        <div class="meta">International Journal of General Medicine. 2021.</div>
+      </div>
+      <div class="pub">
+        <div class="title">62. Role of biomarkers diagnostic tools in patients with COVID-19: stratification made easy.</div>
+        <div class="auth">Salman A, Abdallah H, Eldahdouh S, Elkhadry S, Awad S, Gaballah G, Awaad E, Saad M, Taha A, Nahla G</div>
+        <div class="meta">International Journal of General Medicine. 2024.</div>
+      </div>
+      <div class="pub">
+        <div class="title">63. Impact of sarcopenia on one-year survival in patients undergoing elective resection for colorectal cancer.</div>
+        <div class="auth">Salman A, Salman MA, Awwad A, Al Sheikh AEF, Matter M, Taha AE, Moustafa A, Youssef A, Abdallah A</div>
+        <div class="meta">Surgery in Gastroenterology and Oncology. 2025.</div>
+      </div>
+      <div class="pub">
+        <div class="title">64. Platelet antigen polymorphisms in cirrhosis: Association with esophageal varices development.</div>
+        <div class="auth">Abdallah H, Osheba I, Salman A, Gaballa N, Helmi M, Ibrahim A, Atta A, Saad M, Aboagiza S, Abdel Hafez H, El Helbawy M, GabAllah G, Elewa A, Salman M, Abdelmegeed N</div>
+        <div class="meta">International Journal of General Medicine. 2026</div>
+      </div>
+    </details>
+    <details class="pubcat">
+      <summary>Gastrointestinal Surgical Outcomes and General Surgery <span class="pcount">8</span></summary>
+      <div class="pub">
+        <div class="title">65. Surgical management of perforated peptic ulcer: a comparative meta-analysis of laparoscopic versus open surgery.</div>
+        <div class="auth">Salman MA, Issa M, Salman A, Tourky M, Elewa A, Alrahawy M, Shetty N, Elsherbiney M, Elhaj MGF, Shaaban HED</div>
+        <div class="meta">Surgical Laparoscopy, Endoscopy &amp; Percutaneous Techniques. 2022.</div>
+      </div>
+      <div class="pub">
+        <div class="title">66. Outcomes of radioactive iodine versus surgery for the treatment of Graves’ disease: a systematic review and meta-analysis.</div>
+        <div class="auth">Salman MA, Assal MM, Salman A, Elsherbiney M</div>
+        <div class="meta">Indian Journal of Surgery. 2023.</div>
+      </div>
+      <div class="pub">
+        <div class="title">67. Nissen versus Toupet fundoplication for gastrooesophageal reflux disease, short- and long-term outcomes: a systematic review and meta-analysis.</div>
+        <div class="auth">Salman MA, Salman A, Shaaban HED, Alasmar M, Tourky M, Elhaj MGF, Khalid S, Gebril M, Alrahawy M, Elsherbiney M, Assal MM, Osman MHA, Mohammed AA, Elewa A</div>
+        <div class="meta">Surgical Laparoscopy, Endoscopy &amp; Percutaneous Techniques. 2023.</div>
+      </div>
+      <div class="pub">
+        <div class="title">68. Postoperative pancreatic fistula after pancreaticogastrostomy versus pancreatojejunostomy after pancreatic resection: a comparative systematic review and meta-analysis.</div>
+        <div class="auth">Salman MA, Elewa A, Elsherbiny M, Tourkey M, Emechap EN, Chikukuza S, Salman A</div>
+        <div class="meta">World Journal of Surgery. 2024.</div>
+      </div>
+      <div class="pub">
+        <div class="title">69. Authors’ response: postoperative pancreatic fistula after pancreaticogastrostomy versus pancreatojejunostomy after pancreatic resection, a comparative systematic review and meta-analysis.</div>
+        <div class="auth">Salman MA, Elewa A, Elsherbiny M, Tourkey M, Emechap EN, Chikukuza S, Salman A</div>
+        <div class="meta">World Journal of Surgery. 2024.</div>
+      </div>
+      <div class="pub">
+        <div class="title">70. Laparoscopic peritoneal lavage versus surgical resection for the treatment of complicated perforated diverticulitis: a systematic review and meta-analysis.</div>
+        <div class="auth">Salman MA, Mohamed US, Elewa A, Ali M, Elserafy A, Tourky M, Salman A</div>
+        <div class="meta">Polski Przegląd Chirurgiczny. 2025.</div>
+      </div>
+      <div class="pub">
+        <div class="title">71. Antibiotics versus surgery for uncomplicated acute appendicitis in children: an updated meta-analysis and systematic review.</div>
+        <div class="auth">Salman MA, Salman A, Elewa A, Ali M, Elserafy A, Tourky M, Emechap EN, Mohamed US</div>
+        <div class="meta">Indian J Surg. 2025. doi:10.1007/s12262-025-04487-6</div>
+      </div>
+      <div class="pub">
+        <div class="title">72. Antibiotics versus surgery for uncomplicated acute appendicitis in adults: a meta-analysis of long-term outcomes and risk factors for failure.</div>
+        <div class="auth">Salman MA, Elewa A, Tourky M, Ali M, Emechap EN, Elserafy A, Salman A</div>
+        <div class="meta">Surgical Laparoscopy, Endoscopy &amp; Percutaneous Techniques. 2025.</div>
+      </div>
+    </details>
+    <details class="pubcat">
+      <summary>Inflammatory Bowel Diseases <span class="pcount">2</span></summary>
+      <div class="pub">
+        <div class="title">73. Efficacy and safety of infliximab versus adalimumab in adult subjects with moderate to severe ulcerative colitis: a systematic review and meta-analysis.</div>
+        <div class="auth">Salman A, Salman MA, Elewa A, Awwad AM</div>
+        <div class="meta">Cureus. 2024;16(6):e61547. doi:10.7759/cureus.61547</div>
+      </div>
+      <div class="pub">
+        <div class="title">74. Clinical Significance and Long-Term Prognosis of Appendiceal Orifice Inflammation in Ulcerative Colitis: A Systematic Review.</div>
+        <div class="auth">Ahmed Salman , Mohamed A. Salman , Ahmed Elewa , Asmaa M. Awwad , Ahmed Safina , Mona Helmy</div>
+        <div class="meta">Cureus. 2026;18(4):e107951. doi:10.7759/cureus.107951</div>
+      </div>
+    </details>
+    <details class="pubcat">
+      <summary>Additional Peer-Reviewed and Correspondence Articles <span class="pcount">14</span></summary>
+      <div class="pub">
+        <div class="title">75. Response to “Letter to the Editor” in regard to the article: “Improvement of coronary calcium scores after bariatric surgery in people with severe obesity.”</div>
+        <div class="auth">Salman A, Matter M, Fayad NI, Shehata MSA, Abd Al-Fattah M, Elkaseer MH, Borham MM, Balamoun HA, Sultan AEA, Mikhail HMS, Omar HSE, Milad N, Tourky MS, Elias AAK, Mostafa A, Samir A, Hussein AM, Shaaban HED, Ali HAA, Salman MA</div>
+        <div class="meta">Obesity Surgery. 2022.</div>
+      </div>
+      <div class="pub">
+        <div class="title">76. Reply to letter to the editor in regard to the article: “One anastomosis gastric bypass (OAGB) with a 150-cm biliopancreatic limb (BPL) versus a 200-cm BPL, a systematic review and meta-analysis.”</div>
+        <div class="auth">Salman MA, Salman A, Elewa A</div>
+        <div class="meta">Obesity Surgery. 2023.</div>
+      </div>
+      <div class="pub">
+        <div class="title">77. Improvement of obstructive sleep apnea-hypopnea syndrome in morbidly obese patients undergoing laparoscopic sleeve gastrectomy: prospective study.</div>
+        <div class="auth">Salman MA, Othman B, Salman A, Abdallah A, Elkassar H, Omar MG, Ghobashy A, Nafea MA, Sultan AEA, Abdulsamad AS, Lotfy SM</div>
+        <div class="meta">Bariatric Surgical Practice and Patient Care. 2020.</div>
+      </div>
+      <div class="pub">
+        <div class="title">78. Improvement of systemic adipokines and adipokine hepatic gene expression after laparoscopic sleeve gastrectomy.</div>
+        <div class="auth">Salman MA, Mikhail HMS, Abdelsalam A, Sultan AEA, El-Ghobary M, Ismail AAM, Abouelregal TE, AbdelAal AA, Shaaban HED, GabAllah GMK, Tourky M, Salman A</div>
+        <div class="meta">Bariatric Surgical Practice and Patient Care. 2020.</div>
+      </div>
+      <div class="pub">
+        <div class="title">79. Nutritional complications after Roux-en-Y gastric bypass and one-anastomosis gastric bypass: a comparative systematic review and meta-analysis.</div>
+        <div class="auth">Salman MA, Issa M, Tourky M, Salman A, Noureldin K, Khalid S</div>
+        <div class="meta">Cureus. 2022.</div>
+      </div>
+      <div class="pub">
+        <div class="title">80. Predictors of type-2 diabetes remission following bariatric surgery after a two-year follow-up.</div>
+        <div class="auth">Salman MA, Rabiee A, Salman A, Elewa A, Tourky M, Mahmoud AA, Moustafa A, Shaaban HED, Ismail AA, Noureldin K, Issa M, Farah M, Barbary H, Elhaj MGF, Omar HSE</div>
+        <div class="meta">Asian Journal of Surgery. 2022.</div>
+      </div>
+      <div class="pub">
+        <div class="title">81. Artificial Intelligence-Assisted Endoscopic Ultrasound-Guided Ablation of Pancreatic Neuroendocrine Tumors: Toward Precision Diagnosis, Risk Stratification, and Personalized Therapy</div>
+        <div class="auth">Salman A, Elewa A, Safina A, Marwan A</div>
+        <div class="meta">Cureus Journal of Medical Sciences. Accepted 2026</div>
+      </div>
+      <div class="pub">
+        <div class="title">82. Impact of Timing of ERCP on Diagnostic Yield and Clinical Outcomes in Suspected Choledocholithiasis: A Systematic Review and Meta-analysis.</div>
+        <div class="auth">Salman A, Elewa A, Salman, Abdallah A</div>
+        <div class="meta">Open Access Macedonian Journal of Medical Sciences. Accepted 2026</div>
+      </div>
+      <div class="pub">
+        <div class="title">83. Artificial intelligence in endoscopic ultrasound-guided biliary drainage: Emerging applications, technical challenges, and future directions.</div>
+        <div class="auth">Salman A, Ahmed Elewa A, Marwan A, and Salman M</div>
+        <div class="meta">World Journal of Translational Medicine. Accepted 2026. Manuscript NO: 123702</div>
+      </div>
+      <div class="pub">
+        <div class="title">84. Can Artificial Intelligence Reduce the Burden of Repeat ERCP in Benign Biliary Strictures? A Focused Review of Biodegradable Biliary Stents, Patient Selection, and Predictive Follow-up</div>
+        <div class="auth">Salman A</div>
+        <div class="meta">Kuwait Medical Journal. Accepted 2026. Manuscript NO: KMJ-086-025</div>
+      </div>
+      <div class="pub">
+        <div class="title">85. Artificial Intelligence in Esophageal Motility Diagnostics: Automated Interpretation of High-Resolution Manometry and FLIP Manometry</div>
+        <div class="auth">Salman A, Abdallah A</div>
+        <div class="meta">Japanese Journal of Gastroenterology. Manuscript ID: JJOGASTRO – 5868. Accepted 2026</div>
+      </div>
+      <div class="pub">
+        <div class="title">86. Image-enhanced colonoscopy versus high-definition white light endoscopy for detection of sessile serrated lesions: a systematic review and meta-analysis</div>
+        <div class="auth">Salman A, Salman M, Ahmed Elewa A, Abdallah A, Marwan A</div>
+        <div class="meta">Surgery, Gastroenterology and Oncology (SGO). Accepted. 2026</div>
+      </div>
+      <div class="pub">
+        <div class="title">87. Effect of Roux-En-Y Gastric Bypass on Albuminuria in Morbidly Obese Patients with Type-2 Diabetes Mellitus: A Prospective Non-Randomized Controlled Study with 15-Month Follow-Up.</div>
+        <div class="auth">Salman AA, Salman MA, Taha AE, Awwad A, Marwan A, Elewa A, Yousry M, Abdallah AS, Youssef A</div>
+        <div class="meta">International Journal of General Medicine. Accepted 2026</div>
+      </div>
+      <div class="pub">
+        <div class="title">88. Artificial Intelligence-Assisted EUS for Risk Stratification of Pancreatic Cystic Lesions: Predicting High-Grade Dysplasia, Invasive Cancer, and Surgical Need</div>
+        <div class="auth">Salman A</div>
+        <div class="meta">ASIDE Gastroenterology. Accepted. 2026</div>
+      </div>
+    </details>
 
     <div class="pub-links">
       <a class="btn btn-primary" href="https://scholar.google.com/citations?hl=en&amp;user=ZxT6eNwAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
