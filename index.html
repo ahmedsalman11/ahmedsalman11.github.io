@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dr. Ahmed Salman — Consultant Gastroenterologist &amp; Hepatologist</title>
+<meta name="description" content="Dr. Ahmed Salman — Consultant Gastroenterologist & Hepatologist. Associate Professor of Internal Medicine & Gastroenterology, Cairo University; Senior Clinical Lecturer, The University of Queensland. FRACP, FRCP.">
+<style>
+  :root{
+    --navy:#0f2a4a;
+    --blue:#1d6fb8;
+    --blue-light:#eaf3fb;
+    --ink:#1c2530;
+    --muted:#5a6b7d;
+    --line:#e3eaf1;
+    --bg:#ffffff;
+    --bg-soft:#f7fafc;
+    --radius:14px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:'Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.65}
+  a{color:var(--blue);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .container{max-width:1100px;margin:0 auto;padding:0 24px}
+
+  /* Nav */
+  header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+  .brand{display:flex;align-items:center;gap:12px;font-weight:700;color:var(--navy);font-size:1.02rem}
+  .brand .mark{width:40px;height:40px;border-radius:10px;background:linear-gradient(135deg,var(--navy),var(--blue));color:#fff;display:flex;align-items:center;justify-content:center;font-size:.95rem;font-weight:800;letter-spacing:.5px;flex:0 0 40px}
+  nav ul{display:flex;gap:22px;list-style:none}
+  nav a{color:var(--ink);font-weight:500;font-size:.93rem}
+  nav a:hover{color:var(--blue);text-decoration:none}
+  .menu-btn{display:none;background:none;border:1px solid var(--line);border-radius:8px;padding:8px 12px;font-size:1.1rem;cursor:pointer;color:var(--navy)}
+
+  /* Hero */
+  .hero{background:linear-gradient(180deg,var(--blue-light) 0%,#ffffff 100%);border-bottom:1px solid var(--line)}
+  .hero-inner{display:grid;grid-template-columns:1.5fr 1fr;gap:48px;align-items:center;padding:64px 0 56px}
+  .kicker{display:inline-block;background:#fff;border:1px solid var(--line);color:var(--blue);font-weight:600;font-size:.78rem;letter-spacing:1.2px;text-transform:uppercase;padding:6px 14px;border-radius:999px;margin-bottom:18px}
+  h1{font-size:2.5rem;line-height:1.12;color:var(--navy);margin-bottom:8px}
+  .creds{color:var(--blue);font-weight:600;font-size:1rem;margin-bottom:14px}
+  .hero p.lead{font-size:1.08rem;color:var(--muted);max-width:58ch;margin-bottom:26px}
+  .btn{display:inline-block;padding:13px 26px;border-radius:10px;font-weight:600;font-size:.95rem;transition:.2s}
+  .btn-primary{background:var(--blue);color:#fff}
+  .btn-primary:hover{background:var(--navy);text-decoration:none}
+  .btn-ghost{border:1.5px solid var(--blue);color:var(--blue);margin-left:12px}
+  .btn-ghost:hover{background:var(--blue-light);text-decoration:none}
+  .portrait{display:flex;justify-content:center}
+  .portrait .frame{width:270px;height:270px;border-radius:50%;background:linear-gradient(135deg,var(--navy),var(--blue));display:flex;align-items:center;justify-content:center;color:#fff;font-size:4.6rem;font-weight:800;letter-spacing:2px;box-shadow:0 20px 50px rgba(15,42,74,.25);border:8px solid #fff}
+
+  /* Stats strip */
+  .stats{background:var(--navy);color:#fff}
+  .stats-inner{display:grid;grid-template-columns:repeat(5,1fr);text-align:center;padding:26px 0;gap:14px}
+  .stat .n{font-size:1.7rem;font-weight:800}
+  .stat .l{font-size:.82rem;opacity:.8;letter-spacing:.4px}
+
+  /* Sections */
+  section{padding:72px 0}
+  section.alt{background:var(--bg-soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .sec-head{margin-bottom:38px}
+  .sec-head .tag{color:var(--blue);font-weight:700;font-size:.78rem;letter-spacing:1.5px;text-transform:uppercase}
+  .sec-head h2{font-size:1.85rem;color:var(--navy);margin-top:6px}
+
+  /* About */
+  .about-grid{display:grid;grid-template-columns:1.5fr 1fr;gap:44px}
+  .about-grid p{margin-bottom:15px;color:#33414f}
+  .fact-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px;box-shadow:0 6px 24px rgba(15,42,74,.06);height:fit-content}
+  .fact-card h3{color:var(--navy);font-size:1.02rem;margin-bottom:14px}
+  .fact{display:flex;gap:12px;padding:9px 0;border-top:1px solid var(--line);font-size:.92rem}
+  .fact:first-of-type{border-top:none}
+  .fact .k{color:var(--muted);min-width:105px;flex:0 0 105px}
+  .fact .v{font-weight:600;color:var(--ink)}
+
+  /* Credentials */
+  .cred-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+  .cred-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px}
+  .cred-card h3{color:var(--navy);font-size:1.03rem;margin-bottom:12px;display:flex;align-items:center;gap:10px}
+  .cred-card ul{list-style:none}
+  .cred-card li{padding:7px 0;border-top:1px solid var(--line);font-size:.92rem;color:#33414f}
+  .cred-card li:first-child{border-top:none}
+  .cred-card li b{color:var(--navy)}
+
+  /* Timeline */
+  .timeline{position:relative;margin-left:8px;padding-left:28px;border-left:2px solid #cfe0ef}
+  .t-item{position:relative;padding-bottom:26px}
+  .t-item:last-child{padding-bottom:0}
+  .t-item::before{content:"";position:absolute;left:-37px;top:5px;width:14px;height:14px;border-radius:50%;background:var(--blue);border:3px solid #fff;box-shadow:0 0 0 2px var(--blue)}
+  .t-item .when{color:var(--blue);font-weight:700;font-size:.83rem;letter-spacing:.5px}
+  .t-item .what{font-weight:700;color:var(--navy);font-size:1.02rem;margin-top:2px}
+  .t-item .where{color:var(--muted);font-size:.92rem}
+
+  /* Services */
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px;transition:.2s}
+  .card:hover{transform:translateY(-4px);box-shadow:0 14px 34px rgba(15,42,74,.1)}
+  .card .icon{width:46px;height:46px;border-radius:12px;background:var(--blue-light);display:flex;align-items:center;justify-content:center;font-size:1.35rem;margin-bottom:14px}
+  .card h3{color:var(--navy);font-size:1.03rem;margin-bottom:7px}
+  .card p{color:var(--muted);font-size:.9rem}
+
+  /* Research */
+  .chips{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0 34px}
+  .chip{background:var(--blue-light);color:var(--navy);border:1px solid #d3e5f5;padding:8px 16px;border-radius:999px;font-size:.86rem;font-weight:600}
+  .pub{background:#fff;border:1px solid var(--line);border-left:4px solid var(--blue);border-radius:10px;padding:18px 22px;margin-bottom:12px;transition:.2s}
+  .pub:hover{box-shadow:0 8px 24px rgba(15,42,74,.08)}
+  .pub .title{font-weight:600;color:var(--navy);font-size:.98rem}
+  .pub .meta{color:var(--muted);font-size:.86rem;margin-top:5px;font-style:italic}
+  .pub-links{margin-top:24px;display:flex;gap:12px;flex-wrap:wrap}
+  .pub-links .btn{padding:11px 20px;font-size:.9rem}
+  .pub-links .btn-ghost{margin-left:0}
+
+  /* Editorial & awards */
+  .two-col{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+
+  /* Contact */
+  .contact-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:44px}
+  .c-item{display:flex;gap:15px;margin-bottom:20px}
+  .c-item .icon{flex:0 0 44px;height:44px;border-radius:12px;background:var(--blue-light);display:flex;align-items:center;justify-content:center;font-size:1.2rem}
+  .c-item .k{font-weight:700;color:var(--navy);font-size:.93rem}
+  .c-item .v{color:var(--muted);font-size:.9rem;word-break:break-word}
+  form{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;box-shadow:0 6px 24px rgba(15,42,74,.06)}
+  .field{margin-bottom:15px}
+  label{display:block;font-weight:600;font-size:.87rem;color:var(--navy);margin-bottom:6px}
+  input,textarea{width:100%;padding:12px 14px;border:1.5px solid var(--line);border-radius:9px;font-family:inherit;font-size:.94rem;background:var(--bg-soft)}
+  input:focus,textarea:focus{outline:none;border-color:var(--blue);background:#fff}
+  textarea{min-height:110px;resize:vertical}
+
+  footer{background:var(--navy);color:#c9d8e8;padding:32px 0;font-size:.88rem}
+  .foot{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+  footer a{color:#fff}
+
+  @media(max-width:900px){
+    .hero-inner,.about-grid,.contact-grid,.cred-grid,.two-col{grid-template-columns:1fr}
+    .cards{grid-template-columns:1fr}
+    .stats-inner{grid-template-columns:repeat(2,1fr)}
+    .portrait{order:-1}
+    .portrait .frame{width:190px;height:190px;font-size:3.2rem}
+    h1{font-size:1.9rem}
+    nav ul{display:none;position:absolute;top:68px;left:0;right:0;background:#fff;flex-direction:column;gap:0;border-bottom:1px solid var(--line);padding:10px 24px}
+    nav ul.open{display:flex}
+    nav li{padding:12px 0;border-top:1px solid var(--line)}
+    .menu-btn{display:block}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <div class="brand"><span class="mark">AS</span> Dr. Ahmed Salman</div>
+    <nav>
+      <button class="menu-btn" onclick="document.getElementById('navlinks').classList.toggle('open')">☰</button>
+      <ul id="navlinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#credentials">Credentials</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#services">Expertise</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="container hero-inner">
+    <div>
+      <span class="kicker">Gastroenterology · Hepatology · Internal Medicine</span>
+      <h1>Dr. Ahmed Salman</h1>
+      <div class="creds">MBBCh, MSc, MD (PhD), FRACP, FRCP (Lond · Edin · Irel), MRCP (UK)</div>
+      <p class="lead">Consultant Gastroenterologist, Hepatologist &amp; General Physician. Associate Professor of Internal Medicine &amp; Gastroenterology at Cairo University and Senior Clinical Lecturer at The University of Queensland, with over 15 years of clinical, endoscopic, and academic experience across Egypt and Australia.</p>
+      <a class="btn btn-primary" href="#contact">Get in Touch</a>
+      <a class="btn btn-ghost" href="#research">View Research</a>
+    </div>
+    <div class="portrait"><div class="frame">AS</div></div>
+  </div>
+</div>
+
+<div class="stats">
+  <div class="container stats-inner">
+    <div class="stat"><div class="n">80+</div><div class="l">Peer-Reviewed Publications</div></div>
+    <div class="stat"><div class="n">950+</div><div class="l">Citations · h-index 18</div></div>
+    <div class="stat"><div class="n">4,000+</div><div class="l">Endoscopic Procedures</div></div>
+    <div class="stat"><div class="n">6</div><div class="l">Royal College Fellowships &amp; Memberships</div></div>
+    <div class="stat"><div class="n">15+</div><div class="l">Years of Clinical Experience</div></div>
+  </div>
+</div>
+
+<section id="about">
+  <div class="container">
+    <div class="sec-head"><span class="tag">About</span><h2>Clinician, Academic &amp; Researcher</h2></div>
+    <div class="about-grid">
+      <div>
+        <p>Dr. Ahmed Salman is a consultant gastroenterologist, hepatologist, and general physician. He is a Fellow of the Royal Australasian College of Physicians (FRACP) and of the Royal Colleges of Physicians of London, Edinburgh, and Ireland, and holds a PhD in Internal Medicine from Cairo University.</p>
+        <p>He serves as Associate Professor of Internal Medicine, Gastroenterology &amp; Hepatology at the Faculty of Medicine, Cairo University (Kasr Al-Ainy), and as Senior Clinical Lecturer at the Faculty of Medicine, The University of Queensland, Australia. His clinical career spans Cairo University Hospitals — including a decade as endoscopist at the Al-Ebrashi Unit for Hepato-gastroenterology — and hospital medicine in Australia.</p>
+        <p>His practice covers diagnostic and therapeutic gastroscopy and colonoscopy, emergency gastrointestinal bleeding, chronic liver disease and cirrhosis, inflammatory bowel disease, metabolic liver disease (MASLD), and the medical care of bariatric patients, supported by advanced training in ERCP/EUS and diagnostic and interventional ultrasound.</p>
+        <p>He is certified in gastroscopy and colonoscopy by the Conjoint Committee for the Recognition of Training in Gastrointestinal Endoscopy (CCRTGE, Australia) and the New Zealand Conjoint Committee for Endoscopy, and is registered with AHPRA (Australia), the Medical Council of New Zealand, the GMC (UK), and the Egyptian Medical Syndicate as Senior Consultant of Internal Medicine &amp; Gastroenterology.</p>
+      </div>
+      <div class="fact-card">
+        <h3>At a Glance</h3>
+        <div class="fact"><span class="k">Specialty</span><span class="v">Gastroenterology, Hepatology &amp; Internal Medicine</span></div>
+        <div class="fact"><span class="k">Academic</span><span class="v">Assoc. Professor, Cairo University · Senior Clinical Lecturer, UQ</span></div>
+        <div class="fact"><span class="k">Fellowships</span><span class="v">FRACP · FRCP (Lond) · FRCPE · FRCPI</span></div>
+        <div class="fact"><span class="k">Endoscopy</span><span class="v">CCRTGE &amp; NZ Conjoint certified</span></div>
+        <div class="fact"><span class="k">Registration</span><span class="v">AHPRA · MCNZ · GMC (UK) · Egypt</span></div>
+        <div class="fact"><span class="k">ORCID</span><span class="v"><a href="https://orcid.org/0000-0003-0026-0841" target="_blank" rel="noopener">0000-0003-0026-0841</a></span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="credentials" class="alt">
+  <div class="container">
+    <div class="sec-head"><span class="tag">Credentials</span><h2>Qualifications &amp; Fellowships</h2></div>
+    <div class="cred-grid">
+      <div class="cred-card">
+        <h3>🎓 Degrees</h3>
+        <ul>
+          <li><b>PhD (MD), Internal Medicine</b> — Cairo University, 2017</li>
+          <li><b>MSc, Internal Medicine</b> — Cairo University, 2012</li>
+          <li><b>MBBCh</b> (Excellent with Honours) — Cairo University, 2007</li>
+        </ul>
+      </div>
+      <div class="cred-card">
+        <h3>🏛️ Fellowships</h3>
+        <ul>
+          <li><b>FRACP</b> — Royal Australasian College of Physicians, 2023</li>
+          <li><b>FRCP</b> — Royal College of Physicians of London, 2023</li>
+          <li><b>FRCPE</b> — Royal College of Physicians of Edinburgh, 2024</li>
+          <li><b>FRCPI</b> — Royal College of Physicians of Ireland, 2023</li>
+        </ul>
+      </div>
+      <div class="cred-card">
+        <h3>📜 Memberships &amp; Examinations</h3>
+        <ul>
+          <li><b>MRCP (UK)</b> 2022 · <b>MRCPI</b> 2023 · <b>MRCP (Glasg)</b> 2023</li>
+          <li><b>ESEGH</b> — European Specialty Examination in Gastroenterology &amp; Hepatology, 2018</li>
+          <li><b>ECFMG Certified (USA)</b> — USMLE Steps 1, 2 CK &amp; 3, 2025</li>
+        </ul>
+      </div>
+      <div class="cred-card">
+        <h3>🩺 Specialty Boards &amp; Endoscopy Certification</h3>
+        <ul>
+          <li><b>Gastroenterology &amp; Hepatology:</b> Egyptian (2020), Arab (2019) &amp; Jordanian (2019) Boards</li>
+          <li><b>Internal Medicine:</b> Egyptian (2021), Arab (2021) &amp; Jordanian (2023) Boards</li>
+          <li><b>CCRTGE Certification</b> (Gastroscopy &amp; Colonoscopy), Australia, 2023</li>
+          <li><b>NZ Conjoint Committee for Endoscopy</b> Certification, 2026</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="container">
+    <div class="sec-head"><span class="tag">Experience</span><h2>Academic Appointments</h2></div>
+    <div class="timeline">
+      <div class="t-item">
+        <div class="when">FEB 2025 – PRESENT</div>
+        <div class="what">Senior Clinical Lecturer</div>
+        <div class="where">Faculty of Medicine, The University of Queensland, Australia</div>
+      </div>
+      <div class="t-item">
+        <div class="when">DEC 2021 – PRESENT</div>
+        <div class="what">Associate Professor, Internal Medicine, Gastroenterology &amp; Hepatology</div>
+        <div class="where">Faculty of Medicine, Cairo University, Egypt</div>
+      </div>
+      <div class="t-item">
+        <div class="when">OCT 2016 – NOV 2021</div>
+        <div class="what">Assistant Professor (Lecturer), Internal Medicine, Gastroenterology &amp; Hepatology</div>
+        <div class="where">Faculty of Medicine, Cairo University</div>
+      </div>
+      <div class="t-item">
+        <div class="when">2012 – 2022</div>
+        <div class="what">Endoscopist, Al-Ebrashi Unit for Hepato-gastroenterology &amp; Endoscopies</div>
+        <div class="where">Cairo University Hospitals</div>
+      </div>
+      <div class="t-item">
+        <div class="when">2009 – 2013</div>
+        <div class="what">Residency &amp; Clinical Demonstrator, Internal Medicine</div>
+        <div class="where">Cairo University Hospitals</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="alt">
+  <div class="container">
+    <div class="sec-head"><span class="tag">Expertise</span><h2>Clinical Expertise</h2></div>
+    <div class="cards">
+      <div class="card"><div class="icon">🔬</div><h3>Gastroscopy</h3><p>Diagnostic and therapeutic upper endoscopy: biopsy, polypectomy, clipping, APC, variceal ligation and sclerotherapy, dilatation, and intragastric balloon insertion.</p></div>
+      <div class="card"><div class="icon">🎯</div><h3>Colonoscopy</h3><p>Diagnostic and therapeutic colonoscopy including polypectomy, clipping, and argon plasma coagulation, with CCRTGE-certified training standards.</p></div>
+      <div class="card"><div class="icon">🚨</div><h3>GI Bleeding</h3><p>Extensive emergency endoscopy experience in acute upper and lower gastrointestinal bleeding, including variceal haemorrhage in liver disease.</p></div>
+      <div class="card"><div class="icon">🫁</div><h3>Hepatology &amp; Liver Disease</h3><p>Chronic liver disease, cirrhosis and portal hypertension, MASLD, hepatocellular carcinoma surveillance, and liver transplantation medical care.</p></div>
+      <div class="card"><div class="icon">🌿</div><h3>Inflammatory Bowel Disease</h3><p>Diagnosis and long-term management of ulcerative colitis and Crohn's disease, including biologic therapy.</p></div>
+      <div class="card"><div class="icon">⚖️</div><h3>Metabolic &amp; Bariatric Medicine</h3><p>Obesity-related liver and metabolic disease, and medical assessment and follow-up of patients before and after bariatric surgery.</p></div>
+      <div class="card"><div class="icon">🖥️</div><h3>Ultrasound &amp; Interventions</h3><p>Diagnostic abdominal ultrasound and ultrasound-guided interventions: liver and mass biopsies, paracentesis, and drainage procedures.</p></div>
+      <div class="card"><div class="icon">🧠</div><h3>AI in Endoscopy</h3><p>Active research on artificial intelligence applications in endoscopic ultrasound, cholangioscopy, ERCP, and GI diagnostics.</p></div>
+      <div class="card"><div class="icon">🏥</div><h3>General Internal Medicine</h3><p>Comprehensive acute and chronic adult medical care, from hospital medicine to complex multi-system disease.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="research">
+  <div class="container">
+    <div class="sec-head"><span class="tag">Research</span><h2>Research &amp; Publications</h2></div>
+    <p style="max-width:72ch;color:#33414f">More than 80 peer-reviewed publications in Web of Science- and Scopus-indexed journals (950+ citations, h-index 18), spanning prospective clinical studies, translational biomarker research, and systematic reviews and meta-analyses.</p>
+    <div class="chips">
+      <span class="chip">Metabolic Gastroenterology &amp; MASLD</span>
+      <span class="chip">Bariatric Interventions</span>
+      <span class="chip">Liver Transplantation &amp; Portal Hemodynamics</span>
+      <span class="chip">Advanced Endoscopy (ERCP/EUS)</span>
+      <span class="chip">Artificial Intelligence in GI</span>
+      <span class="chip">Inflammatory Bowel Disease</span>
+      <span class="chip">GI Oncology</span>
+      <span class="chip">Molecular Biomarkers</span>
+    </div>
+
+    <h3 style="color:var(--navy);margin-bottom:16px">Selected Publications</h3>
+    <div class="pub">
+      <div class="title">Artificial Intelligence-Assisted Endoscopic Ultrasound-Guided Ablation of Pancreatic Neuroendocrine Tumors: Toward Precision Diagnosis, Risk Stratification, and Personalized Therapy</div>
+      <div class="meta">Cureus · 2026</div>
+    </div>
+    <div class="pub">
+      <div class="title">Clinical Significance and Long-Term Prognosis of Appendiceal Orifice Inflammation in Ulcerative Colitis: A Systematic Review</div>
+      <div class="meta">Cureus · 2026</div>
+    </div>
+    <div class="pub">
+      <div class="title">Platelet Antigen Polymorphisms in Cirrhosis: Association with Esophageal Varices Development</div>
+      <div class="meta">International Journal of General Medicine · 2026</div>
+    </div>
+    <div class="pub">
+      <div class="title">Efficacy and Safety of Infliximab versus Adalimumab in Adult Subjects with Moderate to Severe Ulcerative Colitis: A Systematic Review and Meta-analysis</div>
+      <div class="meta">Cureus · 2024</div>
+    </div>
+    <div class="pub">
+      <div class="title">Outcomes of Revisional Surgery Options after Inadequate Sleeve Gastrectomy: A Comprehensive Network Meta-analysis</div>
+      <div class="meta">World Journal of Surgery · 2024</div>
+    </div>
+    <div class="pub">
+      <div class="title">Impact of Laparoscopic Sleeve Gastrectomy on Fibrosis Stage in Patients with Child-A NASH-related Cirrhosis</div>
+      <div class="meta">Surgical Endoscopy · 2021</div>
+    </div>
+    <div class="pub">
+      <div class="title">Impact of Sarcopenia on Two-Year Mortality in Patients with HCV-associated Hepatocellular Carcinoma after Radiofrequency Ablation</div>
+      <div class="meta">Journal of Hepatocellular Carcinoma · 2021</div>
+    </div>
+    <div class="pub">
+      <div class="title">Effect of Weight Loss Induced by Laparoscopic Sleeve Gastrectomy on Liver Histology and Serum Adipokine Levels</div>
+      <div class="meta">Journal of Gastroenterology and Hepatology · 2020</div>
+    </div>
+
+    <div class="pub-links">
+      <a class="btn btn-primary" href="https://scholar.google.com/citations?hl=en&amp;user=ZxT6eNwAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+      <a class="btn btn-ghost" href="https://orcid.org/0000-0003-0026-0841" target="_blank" rel="noopener">ORCID</a>
+      <a class="btn btn-ghost" href="https://www.researchgate.net/profile/Ahmed_Salman21" target="_blank" rel="noopener">ResearchGate</a>
+      <a class="btn btn-ghost" href="https://pubmed.ncbi.nlm.nih.gov/?term=Salman+A%5BAuthor%5D+AND+Cairo+University%5BAffiliation%5D" target="_blank" rel="noopener">PubMed</a>
+      <a class="btn btn-ghost" href="https://scholar.cu.edu.eg/?q=awea84/" target="_blank" rel="noopener">Cairo University Scholar</a>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="container">
+    <div class="sec-head"><span class="tag">Recognition</span><h2>Editorial Roles &amp; Awards</h2></div>
+    <div class="two-col">
+      <div class="cred-card">
+        <h3>📖 Editorial Appointments</h3>
+        <ul>
+          <li><b>Associate Editor</b> — Frontiers in Medicine: Gastroenterology &amp; Hepatobiliary Diseases sections (Q1)</li>
+          <li><b>Associate Editor</b> — Cureus: Journal of Medical Science</li>
+          <li><b>Editorial Board Member</b> — World Journal of Hepatology (Q2)</li>
+          <li><b>Editorial Board Member</b> — Clinical and Experimental Gastroenterology</li>
+          <li><b>Peer Reviewer</b> — World Journal of Gastroenterology, International Journal of Surgery, and other indexed journals</li>
+        </ul>
+      </div>
+      <div class="cred-card">
+        <h3>🏆 Prizes &amp; Awards</h3>
+        <ul>
+          <li><b>Cairo University Prize for Scientific Medical Research</b> — 2020, 2021, 2022, 2023 &amp; 2024</li>
+          <li><b>First Rank</b> — Egyptian Fellowship Exams in Internal Medicine, 2021</li>
+          <li><b>Third Rank</b> — Egyptian Fellowship Exams in Gastroenterology &amp; Hepatology, 2020</li>
+          <li><b>Best Medical Research</b> — Internal Medicine Department, Cairo University, 2017</li>
+        </ul>
+      </div>
+    </div>
+    <div class="two-col" style="margin-top:22px">
+      <div class="cred-card">
+        <h3>🌐 Professional Memberships</h3>
+        <ul>
+          <li>American College of Gastroenterology (ACG) · American Gastroenterological Association (AGA) · ASGE · AASLD · ACP</li>
+          <li>Gastroenterological Society of Australia (GESA) · IMSANZ · Australian Medical Association (AMA)</li>
+          <li>Royal Colleges of Physicians — London, Edinburgh, Ireland &amp; Glasgow</li>
+        </ul>
+      </div>
+      <div class="cred-card">
+        <h3>🎓 Teaching</h3>
+        <ul>
+          <li>Undergraduate and postgraduate teaching of Internal Medicine, Cairo University, since 2012 — clinical rounds, examinations &amp; OSCE board</li>
+          <li>Clinical teaching, grand rounds &amp; journal clubs across Australian health services</li>
+          <li>Examiner contributions to the Egyptian Board of Internal Medicine</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <div class="sec-head"><span class="tag">Contact</span><h2>Get in Touch</h2></div>
+    <div class="contact-grid">
+      <div>
+        <div class="c-item"><div class="icon">🇦🇺</div><div><div class="k">Australia</div><div class="v">Senior Clinical Lecturer, The University of Queensland<br><a href="mailto:a.salman@uq.edu.au">a.salman@uq.edu.au</a></div></div></div>
+        <div class="c-item"><div class="icon">🇪🇬</div><div><div class="k">Egypt</div><div class="v">Internal Medicine Department, Faculty of Medicine, Cairo University<br>Al-Saray Street, El Manial, Cairo 11956<br><a href="mailto:awea84@kasralainy.edu.eg">awea84@kasralainy.edu.eg</a></div></div></div>
+        <div class="c-item"><div class="icon">✉️</div><div><div class="k">Email</div><div class="v"><a href="mailto:awea844@gmail.com">awea844@gmail.com</a></div></div></div>
+        <div class="c-item"><div class="icon">🔗</div><div><div class="k">Profiles</div><div class="v"><a href="https://orcid.org/0000-0003-0026-0841" target="_blank" rel="noopener">ORCID</a> · <a href="https://scholar.google.com/citations?hl=en&amp;user=ZxT6eNwAAAAJ" target="_blank" rel="noopener">Google Scholar</a> · <a href="https://www.researchgate.net/profile/Ahmed_Salman21" target="_blank" rel="noopener">ResearchGate</a></div></div></div>
+      </div>
+      <form id="contactForm">
+        <div class="field"><label for="name">Name</label><input id="name" type="text" placeholder="Your full name" required></div>
+        <div class="field"><label for="email">Email</label><input id="email" type="email" placeholder="you@example.com" required></div>
+        <div class="field"><label for="msg">Message</label><textarea id="msg" placeholder="How can I help you?" required></textarea></div>
+        <button class="btn btn-primary" type="submit" style="border:none;cursor:pointer;width:100%">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container foot">
+    <div>© <span id="yr"></span> Dr. Ahmed Salman — Consultant Gastroenterologist, Hepatologist &amp; General Physician</div>
+    <div><a href="https://orcid.org/0000-0003-0026-0841" target="_blank" rel="noopener">ORCID</a> · <a href="#about">About</a> · <a href="#contact">Contact</a></div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  document.getElementById('contactForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    var n = document.getElementById('name').value;
+    var em = document.getElementById('email').value;
+    var m = document.getElementById('msg').value;
+    var body = encodeURIComponent(m + "\n\n— " + n + " (" + em + ")");
+    location.href = "mailto:awea844@gmail.com?subject=" + encodeURIComponent("Website enquiry from " + n) + "&body=" + body;
+  });
+  document.querySelectorAll('#navlinks a').forEach(function(a){
+    a.addEventListener('click', function(){ document.getElementById('navlinks').classList.remove('open'); });
+  });
+</script>
+</body>
+</html>
